@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="{{ asset('dashboard/') }}"
-  data-template="vertical-menu-template-free">
+<html class="light-style layout-menu-fixed" data-theme="theme-default" data-assets-path="{{ asset('dashboard/') }}"
+  data-template="vertical-menu-template-free" lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8" />
@@ -54,7 +54,7 @@
                   document.write(new Date().getFullYear());
                 </script>
                 , made with ❤️ by
-                <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+                <a class="footer-link fw-bolder" href="https://themeselection.com" target="_blank">ThemeSelection</a>
               </div>
             </div>
           </footer>

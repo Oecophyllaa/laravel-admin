@@ -26,7 +26,6 @@
                     <div class="invalid-feedback">
                       {{ $message }}
                     </div>
-                    <small>contoh: IP06001</small>
                   @enderror
                 </div><!-- / inputField1 -->
               </div><!-- / row -->
