@@ -1,11 +1,8 @@
-
 ![Logo](https://i.ibb.co/rv6pJqg/laravel-admin.png)
-
 
 # Laravel Admin
 
 Simple admin dashboard template using Laravel10 and Bootstrap5
-
 
 ## Tech Stack
 
@@ -13,10 +10,12 @@ Simple admin dashboard template using Laravel10 and Bootstrap5
 - [Bootstrap 5](https://getbootstrap.com/)
 
 ## Libraries & Template
+
 - [Sneat Admin - Dashboard Template](https://themewagon.com/themes/free-responsive-bootstrap-5-html5-admin-template-sneat/)
 - [Laravel UI](https://github.com/laravel/ui)
 - [Laravel Captcha](https://github.com/mewebstudio/captcha)
 - [SweetAlert2](https://github.com/realrashid/sweet-alert)
+
 ## Run Locally
 
 Clone the project
@@ -39,13 +38,11 @@ Install dependencies
   npm run dev
 ```
 
-
 Copy `.env` file from `.env.example`
 
 ```bash
   cp .env.example .env
 ```
-
 
 Configure your database in `.env` file
 
@@ -68,7 +65,6 @@ Start the server
   php artisan serve
 ```
 
-
 ## Authors
 
 [Oecophyllaa](https://www.github.com/Oecophyllaa)
@@ -77,8 +73,6 @@ Start the server
 
 If you have any feedback or questions, please reach out to me at [Telegram](https://t.me/Oecophyllaa)
 
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
-

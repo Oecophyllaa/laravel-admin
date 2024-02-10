@@ -18,21 +18,21 @@ use App\Http\Controllers\Admin\TableMasterController as AdminTableMasterControll
 */
 
 Route::get('/', function () {
-  return view('welcome');
+	return view('welcome');
 });
 
 Auth::routes();
 
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(function () {
 
-  // DASHBOARD
-  Route::get('/', [AdminDashboardController::class, 'index'])->name('index');
-  Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
+	// DASHBOARD
+	Route::get('/', [AdminDashboardController::class, 'index'])->name('index');
+	Route::get('/dashboard', [AdminDashboardController::class, 'index'])->name('dashboard');
 
-  // ADMIN PROFILE
-  Route::get('/profile', [AdminDashboardController::class, 'profile'])->name('profile');
-  Route::put('/profile/update', [AdminDashboardController::class, 'profileUpdate'])->name('profile.update');
+	// ADMIN PROFILE
+	Route::get('/profile', [AdminDashboardController::class, 'profile'])->name('profile');
+	Route::put('/profile/update', [AdminDashboardController::class, 'profileUpdate'])->name('profile.update');
 
-  // TABLE MASTER
-  Route::resource('table-master', AdminTableMasterController::class);
+	// TABLE MASTER
+	Route::resource('table-master', AdminTableMasterController::class);
 });

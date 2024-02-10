@@ -13,6 +13,7 @@
   @stack('before-style')
   @include('includes.admin.style')
   @stack('after-style')
+  @notifyCss
 
   <!-- Helpers -->
   <script src="{{ asset('backend/vendor/js/helpers.js') }}"></script>
@@ -79,6 +80,8 @@
 
   <!-- SweetAlert2 -->
   @include('sweetalert::alert')
+  @include('notify::components.notify')
+  @notifyJs
 </body>
 
 </html>
