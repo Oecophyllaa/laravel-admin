@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Admin\DashboardController as AdminDashboardController;
-use App\Http\Controllers\Admin\TableMasterController as AdminTableMasterController;
+use App\Http\Controllers\Admin\ExampleController as AdminExampleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,5 +34,5 @@ Route::prefix('admin')->name('admin.')->middleware(['auth', 'verified'])->group(
 	Route::put('/profile/update', [AdminDashboardController::class, 'profileUpdate'])->name('profile.update');
 
 	// TABLE MASTER
-	Route::resource('table-master', AdminTableMasterController::class);
+	Route::resource('examples', AdminExampleController::class);
 });
